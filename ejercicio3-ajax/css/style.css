@@ -1,0 +1,72 @@
+#select1{
+     width:400px;
+     height: auto;
+}
+
+.labelselect1{
+
+	min-height: 1px;
+	margin-bottom: 3px;
+	font-size: 12px;
+	text-align: left;
+	font-weight: bold;
+	position: relative;
+
+}
+
+#select2{
+     width:400px;
+     height: auto;
+     display: none;
+}
+
+
+.labelselect2{
+
+	min-height: 1px;
+	margin-bottom: 3px;
+	font-size: 12px;
+	text-align: left;
+	font-weight: bold;
+	position: relative;
+
+}
+
+
+#frmDatos{
+   width: 956px;
+   min-height: 423px;
+   height: auto;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   position: relative;
+   margin:50px auto;
+
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-evenly;
+
+   padding-left: 39px;
+   box-sizing: border-box;
+
+}
+
+#selCiudades{
+
+   width: 400px;
+   height: 222px;
+
+}
+
+#selPropiedades{
+
+   display: none;
+}
+
+.selPropiedades{
+
+  width: 400px;
+  height: 222px;
+
+}

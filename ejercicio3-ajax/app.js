@@ -1,5 +1,11 @@
+
+
+
 function ComponerLista()
 {
+
+
+
      var sel = document.getElementById("selCiudades");
      var idcat = sel.options[sel.selectedIndex].value
 
@@ -25,7 +31,8 @@ function ComponerLista()
 
   document.forms.frmDatos.selCiudades.disabled = false;
 
-}
+
+} //END FUNCTION COMPONERLISTA
 
 
 function objetoAjax(){
@@ -60,6 +67,17 @@ function CargarPropiedades(idcat)
         if (ajax.readyState==4 && ajax.status == 200)
         {
              document.getElementById("selPropiedades").innerHTML =  ajax.responseText;
+
+             if(document.getElementById("selPropiedades").options.length == 0)
+             {
+               document.getElementById("select2").style.display = "none";
+               document.getElementById("selPropiedades").style.display = "none";
+             }
+             else if(document.getElementById("selPropiedades").options.length > 0)
+             {
+                document.getElementById("select2").style.display = "block";
+                document.getElementById("selPropiedades").style.display = "block";
+             }
 
       }
       else if(ajax.readyState==1)

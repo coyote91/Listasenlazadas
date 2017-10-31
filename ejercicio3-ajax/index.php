@@ -8,11 +8,17 @@ include './bd/conexion.php';
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
     <form id="frmDatos" name="frmDatos" method="post" action="">
-      <label>Categorias:
+
+      <div id="select1">
+         <div class="labelselect1">
+           <label for="selCiudades">Seleccione una categoria:</label>
+         </div>
+
           <select name="selCiudades" size="20" id="selCiudades" onchange="ComponerLista()" >
               <?php
 
@@ -42,13 +48,23 @@ include './bd/conexion.php';
 
               ?>
           </select>
-      </label>
+
+      </div>
 
 
-            <label>Subcategorias:
-            <select name="" size="20" id="selPropiedades">
-            </select>
-            </label>
+        <div id="select2">
+
+          <div class="labelselect2">
+             <label for="selPropiedades">Por favor especifique </label>
+          </div>
+
+
+          <select name="selPropiedades" size="20" id="selPropiedades" class="selPropiedades">
+          </select>
+
+
+        </div>
+
 
             <div id="load"></div>
 
